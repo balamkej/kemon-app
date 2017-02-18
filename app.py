@@ -1,4 +1,3 @@
-import os
 from flask import Flask, render_template, request, redirect, url_for, send_file
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
