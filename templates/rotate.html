@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Kemon Weaving App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">   
+            <p class="navbar-text">
+            <a href="/" class="btn btn-default" type="button">Home</a>
+            <a href="/create" class="btn btn-default" type="button">Upload Loom</a>
+            <a href="/rotate" class="btn btn-default" type="button">Rotate</a>
+            </p>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+        <!-- <h2 class="panel-heading">Set up the Loom</h2> -->
+        </div>
+        <div class="panel-body">
+        <div class="container-fluid">
+        <form method=post enctype=multipart/form-data>
+            <div class="row">
+                <div class="col-xs-4">
+                <p><input type=file name=file></p>
+                  <input type="radio" name="rotation" value="right" checked> Rotate csv right 90&#176;<br>
+                  <input type="radio" name="rotation" value="left"> Rotate csv left 90&#176;<br>
+                </div>        
+            </div>
+        <div class="col-xs-12">
+        <br>    
+        <p class="text-center"><input class="btn btn-default" type=submit value=Rotate></p>
+        </div>
+        </div>
+      </form>  
+    </div>
+</div>  
+
+
+</body>
+ 
+</html>
