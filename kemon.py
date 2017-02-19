@@ -102,8 +102,8 @@ def rotate():
             	fileArray = np.rot90(fileArray,3)
                 outname = file.filename.rsplit('.', 1)[0] + '-rotL90'
 
-	        np.savetxt('uploads/' + outname + '.csv', fileArray, fmt='%i', delimiter=',')
-	        return send_file('uploads/' + outname + '.csv', as_attachment=True, attachment_filename=outname + '.csv')
+	    np.savetxt('uploads/' + outname + '.csv', fileArray, fmt='%i', delimiter=',')
+	    return send_file('uploads/' + outname + '.csv', as_attachment=True, attachment_filename=outname + '.csv')
     return render_template('rotate.html')
 
 
