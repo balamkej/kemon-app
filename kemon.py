@@ -95,7 +95,7 @@ def rotate():
             fileArray = np.nan_to_num(fileArray)
             fileArray = np.int_(fileArray)
 
-            if option == "Right":
+            if option == "right":
             	fileArray = np.rot90(fileArray)
                 outname = file.filename.rsplit('.', 1)[0] + '-rotR90'
             else:
