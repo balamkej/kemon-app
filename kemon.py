@@ -49,7 +49,7 @@ def allowed_file(filename):
 
 @app.route("/")
 def main():
-    return render_template('index.html')
+    return render_template('kemon.html')
 
 @app.route('/create', methods=['GET', 'POST'])
 def upload():
