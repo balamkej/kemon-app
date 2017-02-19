@@ -17,7 +17,7 @@ def mushing(threading,treadleRow):
     return row
 
 def mushing2(treadleRow,tieup):
-    row = np.zeros(len(tieup[0]), int)
+    row = np.zeros(len(tieup[:,0]), int)
     for i in mushingIndex(treadleRow):
         row = row + tieup[:,i]
         np.clip(row,0,1,row)
